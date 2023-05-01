@@ -5,13 +5,28 @@ Trabalho de Conclusão de Curso - UTFPR-PB
 
 ## Resumo
 
-<<<<<<< HEAD
 <div style="text-align: justify"> 
-A internet das coisas está presente em inúmeras áreas da nossa rotina e em diferentes locais, conquistando feitos impressionantes e percorrendo um caminho de avanço constante, o que nos leva a necessidade de desenvolver  implementações cada vez mais sofisticadas. Com isso, um novo desafio surge, implantar aprendizado de máquina em pequenos dispositivos do dia a dia. O campo responsável por conectar sistemas embarcados e o aprendizado de máquina é o tinyML e baseado nesse método, o presente trabalho busca realizar a implantação de uma rede neural artificial que realize o reconhecimento de placas veiculares em um hardware de baixo custo, buscando exemplificar a detecção de placas automotivas em um sistema embarcado Raspberry Pi Zero 2W, utilizando-se da abordagem tinyML e o framework do TensorFlow Lite para quantização do modelo MobileNetV2-SSDLite.
-=======
-<div style="text-align: justify">  
-A internet das coisas está presente em inúmeras áreas da nossa rotina e em diferentes locais, conquistando feitos impressionantes e percorrendo um caminho de avanço constante, o que nos leva a necessidade de desenvolver implementações cada vez mais sofisticadas. Com isso, um novo desafio surge, implantar aprendizado de máquina em pequenos dispositivos do dia a dia. O campo responsável por conectar sistemas embarcados e o aprendizado de máquina é o tinyML e baseando-se nesse método, o presente trabalho busca realizar a implantação de uma rede neural artificial que realize o reconhecimento de placas veiculares em um hardware de baixo custo. Dessa forma, treinou-se um modelo MobileNetV2-SSDLite para detecção de placas automotivas, efetuando a quantização fazendo uso do \textit{framework} do TensorFlow Lite e implantando a solução em um sistema embarcado Raspberry Pi Zero 2W. Os resultados obtidos para os modelos otimizados, obtiveram um bom desempenho em termos de latência, pouca variação na precisão ao ser comparado com o modelo original, mostrando que o tinyML é uma ótima alternativa para aplicações embarcadas.
->>>>>>> origin/main
+Atualmente, existem mais de 250 bilhões de microcontroladores no mundo, logo, viabilizar
+a possibilidade de executar modelos de aprendizado de máquina em sistemas embarcados é
+motivado porque muitos dos dados captados por sensores são descartados devido ao custo,
+necessidade de conexão com internet ou restrições de energia. Diante desse cenário, surge uma
+nova abordagem de soluções de aprendizado de máquina, que integram sistemas com recursos
+limitados e inteligência artificial, o Tiny Machine Learning (TinyML), essa abordagem tem como
+objetivo viabilizar a implantação de modelos de inteligência artificial em sistemas embarcados
+de baixo custo e pouco poder de processamento. Entre as aplicações que poderiam se beneficiar
+da integração de aprendizado de máquina e hardware com recursos limitados, são os dispositivos
+de reconhecimento automático. Portanto, o presente trabalho busca realizar a implantação de
+uma rede neural artificial que realize o reconhecimento de placas veiculares em um hardware de
+baixo custo. Dessa forma, treinou-se um modelo MobileNetV2 SSD FPN-Lite para detecção
+de placas automotivas, efetuando a quantização fazendo uso do framework do TensorFlow Lite
+e implantando a solução em um sistema embarcado Raspberry Pi Zero 2W. Foram realizados
+experimentos em quatro formas de quantização e entre duas linguagens distintas, Python e
+C++. O melhor resultado apresentado considerando o tamanho de armazenamento, índice de
+confiabilidade e tempo de latência, foi o da quantização dinâmica em C++, pois, comparado ao
+modelo não quantizado, obteve uma redução em armazenamento de 75%, apresentando um score
+de 72,38% contra 72,28% do modelo não quantizado, e, uma eficiência no tempo de execução
+de 20%. Tornando assim, o tinyML uma alternativa viável para aplicações em sistemas com
+limitações de recursos.
 </div>
 
 
